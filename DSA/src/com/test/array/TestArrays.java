@@ -55,4 +55,23 @@ class TestArrays {
 		System.out.println(Arrays.toString(act));
 		assertArrayEquals(exp, act);
 	}
+	
+	@Test
+	void testReverseCopy() {
+		int[] arr = { 1, 1, 2, 3, 4 };
+		int[] exp = { 4, 3, 2, 1, 1 };
+		int[] act = Array.reverseCopy(arr);
+		System.out.println(Arrays.toString(act));
+		assertArrayEquals(exp, act);
+	}
+	
+	@Test
+	void testReverse() {
+		int[] arr = { 5, 1, 1, 2, 3, 4 };
+		int[] exp = { 4, 3, 2, 1, 1, 5 };
+		int[] act = Array.reverse(arr);
+		System.out.println(Arrays.toString(act));
+		assertArrayEquals(exp, act);
+	}
+	
 }
