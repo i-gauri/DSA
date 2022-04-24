@@ -1,4 +1,4 @@
-package com.test.sorting;
+package com.test.algo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
-import com.algo.sorting.Sorting;
+import com.algo.Sorting;
 
 class TestSorting {
 

@@ -1,4 +1,4 @@
-package com.test.matrix;
+package com.test.practice;
 
 import static org.junit.jupiter.api.Assertions.*;
 

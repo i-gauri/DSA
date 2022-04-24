@@ -1,5 +1,6 @@
 package com.practice;
 
+import com.algo.Searching;
 import com.utils.Utils;
 
 public class Array {
@@ -139,4 +140,21 @@ public class Array {
 	// How do you find all pairs of an integer array whose sum is equal to a given
 	// number?
 
+	public static int[] firstAndLastOccranceInSortedArray(int[] arr, int key) {
+		int[] result = {-1, -1};
+		int index = Searching.binary(arr, key);
+		if(index == -1) return result;
+		int i = index - 1;
+		while(i >= 0 && arr[i] == key) {
+			i--;
+		}
+		result[0] = i + 1;
+		i = index + 1;
+		while(i <= arr.length - 1 && arr[i] == key) {
+			i++;
+		}
+		result[1] = i - 1;	
+		
+		return result;
+	}
 }

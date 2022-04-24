@@ -1,4 +1,4 @@
-package com.algo.sorting;
+package com.algo;
 
 import com.practice.Array;
 import com.utils.Utils;
