@@ -105,4 +105,12 @@ class TestStringPattern {
 		String ptr = "bbebefgac";
 		assertEquals(1, StringPattern.kmp(str, ptr));
 	}
+	
+	@Test
+	void testRabinKarp() {
+		String str = "StackOverFlowOver";
+		String pat = "Over";
+		Object[] positions = {5, 13};
+		assertArrayEquals(positions, StringPattern.rabin_karp(str, pat).toArray());
+	}
 }
